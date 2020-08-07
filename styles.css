@@ -26,11 +26,13 @@ body {
 
 .video-container header {
     height: 16px;
+    /* Temp background color */
     background-color: red;
 }
 
 .video-list ol li {
     height: 30px;
     background-color: gray;
+    /* Temp background color */
     outline: 1px solid red;
 }
