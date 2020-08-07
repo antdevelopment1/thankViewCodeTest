@@ -94,21 +94,15 @@ const videos = [{
 
 
 const videoContainer = document.querySelector('[data-video-list]');
+const videoList = document.querySelector('[data-video]');
 
 
-// Needs to be refactored using map function and appending data to screen needs to be cleaner
 for (let i = 0; i < videos.length; i++) {
     const video = document.createElement('li');
+    // Needs to be refactored using map function and appending data to screen needs to be cleaner
     video.innerHTML = [videos[i].url, videos[i].title, videos[i].seconds, videos[i].thumb].join("");
     videoContainer.appendChild(video);
 }
-
-// for (let i = 0; i < videos.length; i++) {
-//     const video = document.createElement('li');
-//     video.innerHTML = [videos[i].url, videos[i].title, videos[i].seconds, videos[i].thumb].join("");
-//     videoContainer.appendChild(video);
-// }
-
 
 
 
